@@ -112,8 +112,8 @@
   }
 
   .imageprofil {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
   }
 
@@ -211,8 +211,8 @@ font-size: 20px;
 
 .case-titre {
   font-size: 20px;
-  font-weight: 900; /* Très gras */
-  text-transform: uppercase; /* Force les majuscules comme sur l'image */
+  font-weight: 900;
+  text-transform: uppercase; 
   margin-bottom: 12px;
 }  
 
