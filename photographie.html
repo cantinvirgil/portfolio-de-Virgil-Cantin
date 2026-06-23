@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <div class="navbar">
+
+<header>
+
+        <div class="navbar">
         <nav class="menu">
             <a href="profil.html">Profil</a>
             <a href="photographie.html">Photographie</a>
@@ -27,6 +30,8 @@
             <button class="bouton-langue" onclick="basculerLangue()">🇬🇧 Passer en Anglais</button>
         </div>
     </div>
+</header>
+
     <nav id="filters">
         <button class="active" data-filter="tout">Tout</button>
         <button data-filter="portrait">Portrait</button>
@@ -41,7 +46,7 @@
         <figure data-cat="portrait"><img src="Photo/IMG_0661.jpg" alt="Photo de grand-mère coréenne">
             <figcaption>Portrait d'une grand-mère coréenne</figcaption>
         </figure>
-        
+
         <figure data-cat="portrait"><img src="Photo/Mamie 1.jpg" alt="Mamie qui travaille">
             <figcaption>Grand-mère coréenne au travail</figcaption>
         </figure>
@@ -78,31 +83,41 @@
             <figcaption>Rue coréenne</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151321.png" alt="Euphoria style portrait">
+        <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151321.png"
+                alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 1</figcaption>
         </figure>
 
         <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151351.png"
                 alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 2</figcaption>
-            </figure>
+        </figure>
 
-            <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151406.png" alt="Euphoria style portrait">
-                <figcaption>Portrait style euphoria 3</figcaption>
-            </figure>
-        
-            <figure data-cat="portrait"><img src="Photo/CHLOE 1.png" alt="Euphoria style portrait">
-                <figcaption>Portrait style euphoria 4</figcaption>
-            </figure>
+        <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151406.png"
+                alt="Euphoria style portrait">
+            <figcaption>Portrait style euphoria 3</figcaption>
+        </figure>
 
-            <figure data-cat="portrait"><img src="Photo/CHLOE 2.png" alt="Euphoria style portrait">
-                <figcaption>Portrait style euphoria 5</figcaption>
-            </figure>
+        <figure data-cat="portrait"><img src="Photo/CHLOE 1.png" alt="Euphoria style portrait">
+            <figcaption>Portrait style euphoria 4</figcaption>
+        </figure>
 
-            <figure data-cat="portrait"><img src="Photo/CHLOE 3.png" alt="Euphoria style portrait">
-                <figcaption>Portrait style euphoria 4</figcaption>
-            </figure>
+        <figure data-cat="portrait"><img src="Photo/CHLOE 2.png" alt="Euphoria style portrait">
+            <figcaption>Portrait style euphoria 5</figcaption>
+        </figure>
+
+        <figure data-cat="portrait"><img src="Photo/CHLOE 3.png" alt="Euphoria style portrait">
+            <figcaption>Portrait style euphoria 4</figcaption>
+        </figure>
     </section>
+
+    <div class="ZoomPhoto" id="ZoomPhoto">
+        <button class="fermer" id="ZoomPhotoClose" aria-label="Fermer">✕</button>
+        <button class="flèche précédente" id="photoAvant" aria-label="Image précédente">‹</button>
+        <img id="ZoomPhotoImg" src="" alt="">
+        <figcaption id="ZoomPhotoDescription"></figcaption>
+        <button class="flèche suivante" id="photoAprès" aria-label="Image suivante">›</button>
+    </div>
 </body>
 
 </html>
