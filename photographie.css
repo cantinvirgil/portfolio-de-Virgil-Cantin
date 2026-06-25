@@ -217,7 +217,7 @@ figure.hide {
   padding: 8px 16px;
   border: 1px solid #ccc;
   background-color: transparent;
-  color: #1a1a1a;
+  color: #4a7c59;
   cursor: pointer;
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -375,4 +375,8 @@ body.dark .continuer-btn {
 
 body.dark .galerie {
   background: #111;
+}
+
+body.dark #filters button{
+    color: #4a7c59;
 }

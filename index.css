@@ -10,7 +10,7 @@
 
   body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #1a1a1a;
+      color: #4a7c59;
       background-color: #ffffff;
       overflow-x: hidden;
   }
@@ -107,7 +107,6 @@
     padding-top: 100px; 
     padding-bottom: 50px; 
 }
-  }
 
   .section-gauche {
       width: 47%;
