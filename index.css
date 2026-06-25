@@ -101,9 +101,12 @@
   }
 
   .section {
-      display: flex;
-      height: 1000px;
-      padding-top: 50px;
+    display: flex;
+    min-height: 100vh; 
+    height: auto; 
+    padding-top: 100px; 
+    padding-bottom: 50px; 
+}
   }
 
   .section-gauche {
