@@ -1,38 +1,39 @@
 <html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio photographique : portraits, paysages et photographie de rue.">
     <title>Photographie</title>
-      <link rel="stylesheet" href="photographie.css" />
-  <script src="photographie.js"></script>
+    <link rel="stylesheet" href="photographie.css" />
+    <script src="photographie.js"></script>
 </head>
 
 <body>
 
-<header>
+    <header>
 
         <div class="navbar">
-        <nav class="menu">
-            <a href="profil.html">Profil</a>
-            <a href="photographie.html">Photographie</a>
-            <a href="webdesing.html">Webdesign</a>
-        </nav>
+            <nav class="menu">
+                <a href="profil.html">Profil</a>
+                <a href="photographie.html">Photographie</a>
+                <a href="webdesing.html">Webdesign</a>
+            </nav>
 
-        <div class="contrôles">
-            <label class="bouton">
-                <label class="interrupteur">
-                    <input type="checkbox" id="interrupteurSombre" onchange="basculerTheme()" />
-                    <span class="curseur"></span>
+            <div class="contrôles">
+                <label class="bouton">
+                    <label class="interrupteur">
+                        <input type="checkbox" id="interrupteurSombre" onchange="basculerTheme()" />
+                        <span class="curseur"></span>
+                    </label>
+                    Thème sombre
                 </label>
-                Thème sombre
-            </label>
-            <button class="bouton-langue" onclick="basculerLangue()">🇬🇧 Passer en Anglais</button>
+                <button class="bouton-langue" onclick="basculerLangue()">🇬🇧 Passer en Anglais</button>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <nav id="filters">
         <button class="active" data-filter="tout">Tout</button>
@@ -45,70 +46,83 @@
 
     <section class="galerie" id="galerie">
 
-        <figure data-cat="portrait"><img src="Photo/IMG_0661.jpg" alt="Photo de grand-mère coréenne">
+        <figure data-cat="portrait">
+            <img src="Photo/IMG_0661.jpg" alt="Photo de grand-mère coréenne">
             <figcaption>Portrait d'une grand-mère coréenne</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Mamie 1.jpg" alt="Mamie qui travaille">
+        <figure data-cat="portrait">
+            <img src="Photo/Mamie 1.jpg" alt="Mamie qui travaille">
             <figcaption>Grand-mère coréenne au travail</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Spidy pêcheur1.jpg" alt="pêcheur">
+        <figure data-cat="portrait">
+            <img src="Photo/Spidy pêcheur1.jpg" alt="pêcheur">
             <figcaption>Portrait d'un pêcheur coréen 1</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Spidy pêcheur2.jpg" alt="pêcheur">
+        <figure data-cat="portrait">
+            <img src="Photo/Spidy pêcheur2.jpg" alt="pêcheur">
             <figcaption>Portrait d'un pêcheur coréen 2</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Spidy pêcheur3.jpg" alt="pêcheur">
+        <figure data-cat="portrait">
+            <img src="Photo/Spidy pêcheur3.jpg" alt="pêcheur">
             <figcaption>Portrait d'un pêcheur coréen 3</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Papi resto.jpg" alt="Photo de grand-père coréenne">
+        <figure data-cat="portrait">
+            <img src="Photo/Papi resto.jpg" alt="Photo de grand-père coréenne">
             <figcaption>Portrait d'un grand père coréen</figcaption>
         </figure>
 
-        <figure data-cat="paysage"><img src="Photo/Paysage.jpg" alt="Paysage coréen">
+        <figure data-cat="paysage">
+            <img src="Photo/Paysage.jpg" alt="Paysage coréen">
             <figcaption>Paysage de Corée — 02</figcaption>
         </figure>
 
-        <figure data-cat="rue"><img src="Photo/20260426_171856.jpg" alt="Rue">
+        <figure data-cat="rue">
+            <img src="Photo/20260426_171856.jpg" alt="Rue">
             <figcaption>Rue — 02</figcaption>
         </figure>
 
-        <figure data-cat="animaux"><img src="Photo/IMG_0333.jpg" alt="Mon chien">
+        <figure data-cat="animaux">
+            <img src="Photo/IMG_0333.jpg" alt="Mon chien">
             <figcaption>Photo chien et fleur</figcaption>
         </figure>
 
-        <figure data-cat="rue"><img src="Photo/20260510_122855.jpg" alt="Photo de rue en Corée">
+        <figure data-cat="rue">
+            <img src="Photo/20260510_122855.jpg" alt="Photo de rue en Corée">
             <figcaption>Rue coréenne</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151321.png"
-                alt="Euphoria style portrait">
+        <figure data-cat="portrait">
+            <img src="Photo/Capture d'écran 2026-03-26 151321.png" alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 1</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151351.png"
-                alt="Euphoria style portrait">
+        <figure data-cat="portrait">
+            <img src="Photo/Capture d'écran 2026-03-26 151351.png" alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 2</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/Capture d'écran 2026-03-26 151406.png"
-                alt="Euphoria style portrait">
+        <figure data-cat="portrait">
+            <img src="Photo/Capture d'écran 2026-03-26 151406.png" alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 3</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/CHLOE 1.png" alt="Euphoria style portrait">
+        <figure data-cat="portrait">
+            <img src="Photo/CHLOE 1.png" alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 4</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/CHLOE 2.png" alt="Euphoria style portrait">
+        <figure data-cat="portrait">
+            <img src="Photo/CHLOE 2.png" alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 5</figcaption>
         </figure>
 
-        <figure data-cat="portrait"><img src="Photo/CHLOE 3.png" alt="Euphoria style portrait">
+        <figure data-cat="portrait">
+            <img src="Photo/CHLOE 3.png" alt="Euphoria style portrait">
             <figcaption>Portrait style euphoria 4</figcaption>
         </figure>
     </section>
