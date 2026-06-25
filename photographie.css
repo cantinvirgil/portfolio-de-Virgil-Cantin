@@ -144,6 +144,8 @@ nav a.about:hover {
 .galerie {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
+  gap: 15px;
+  padding: 0 15px 30px;
 }
 
 @media (max-width: 780px) {
@@ -203,6 +205,30 @@ figure.hide {
   display: none; 
 }
 
+#filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 10px;
+  padding: 120px 20px 30px; 
+}
+
+#filters button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+#filters button:hover,
+#filters button.active {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
 
 .ZoomPhoto {
   position: fixed;
@@ -302,4 +328,51 @@ figure.hide {
     top: 16px;
     right: 16px;
   }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .menu, .contrôles {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+body.dark {
+  --bg-left: #1a1a1a;
+  --bg-right: #111111;
+  --card-bg: #1e1e1e;
+  --card-border: #2a2a2a;
+  --text-dark: #f0f0f0;
+  --text-mid: #ccc;
+  --text-muted: #777;
+  background: #111;
+}
+
+body.dark .navbar {
+  background: rgba(17, 17, 17, 0.92);
+  border-bottom-color: #2a2a2a;
+}
+
+body.dark .lang-btn {
+  background: #1e1e1e;
+  border-color: #333;
+  color: #aaa;
+}
+
+body.dark .continuer-btn {
+  background: #1e1e1e;
+  border-color: #333;
+  color: #ccc;
+}
+
+body.dark .galerie {
+  background: #111;
 }
