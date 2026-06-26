@@ -10,7 +10,7 @@
 
   body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #4a7c59;
+      color: #1a1a1a;
       background-color: #ffffff;
       overflow-x: hidden;
   }
@@ -111,11 +111,16 @@
   .section-gauche {
       width: 47%;
       background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
   .imageprofil {
-      width: 80%;
-      height: 80%;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/5;
+      border-radius: 8px;
       object-fit: cover;
   }
 
@@ -128,8 +133,10 @@
   }
 
   .section-nom .nom {
-      font-family: monospace;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       font-size: 42px;
+      font-weight: 300;
+      text-transform: uppercase;
   }
 
   .section-nom .prénom {
@@ -151,8 +158,6 @@
       background-color: #4a7c59;
       margin: 20px auto;
   }
-
-
 
   .continuer-btn {
       display: block;
@@ -186,7 +191,7 @@
       margin: 0 auto;
   }
 
-  .case-icône {
+  .case-icone {
       position: absolute;
       top: 30px;
       left: 30px;
@@ -242,10 +247,11 @@
   }
 
   .lien:hover {
-      transform: scale(1.03);
+      transform: translateY(-8px);
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
       border: 1px solid transparent;
       border-bottom: 4px solid #4a7c59;
+      border-color: #4a7c59;
   }
 
   .lien:hover .case-icone {
