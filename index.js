@@ -28,8 +28,7 @@
       'bouton-langue': '🇫🇷 Switch to French',
     }
   };
-
-  function basculerLangue() {
+ function basculerLangue() {
     lang = lang === 'fr' ? 'en' : 'fr';
     const t = translations[lang];
     Object.entries(t).forEach(([id, val]) => {
@@ -42,10 +41,23 @@
 
   function basculerTheme() {
     document.body.classList.toggle('dark', document.getElementById('interrupteurSombre').checked);
-  }
+  const estSombre = document.getElementById('interrupteurSombre').checked;
+  localStorage.setItem('theme', estSombre ? 'sombre' : 'clair');
+}
 
   function navigate(page) {
-    // Placeholder navigation — replace with real href
     event.preventDefault();
     alert(`Navigation vers : ${page}`);
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const themeSauvegarde = localStorage.getItem('theme');
+  const interrupteur = document.getElementById('interrupteurSombre');
+  
+  if (themeSauvegarde === 'sombre') {
+    document.body.classList.add('dark');
+    if (interrupteur) {
+      interrupteur.checked = true;
+    }
+  }
+});
