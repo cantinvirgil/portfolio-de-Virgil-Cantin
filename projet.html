@@ -1,12 +1,70 @@
 <html>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Accueil</title>
+    <link rel="stylesheet" href="projet.css" />
+    <script src="projet.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav class="menu">
+            <a href="profil.html">Profil</a>
+            <a href="photographie.html">Photographie</a>
+            <a href="projet.html">Webdesign</a>
+        </nav>
+
+        <div class="contrôles">
+            <label class="bouton">
+                <label class="interrupteur">
+                    <input type="checkbox" id="interrupteurSombre" onchange="basculerTheme()" />
+                    <span class="curseur"></span>
+                </label>
+                Thème sombre
+            </label>
+            <button class="bouton-langue" onclick="basculerLangue()">🇬🇧 Passer en Anglais</button>
+        </div>
+    <section class="projets" id="projets">
+        <div class="projets">
+            <h2 class="projets-titre">
+                Mes PROJETS
+            </h2>
+
+            <article class="projets">
+
+                <div class="projets-image">
+                    <img src="Photo/HomePage.jpg" alt="Vivre de la mer à Geoje">
+
+                </div>
+
+                <div class="projets-info">
+
+                    <h3>
+                        Documentaire "Vivre de la mer à Geoje"
+                    </h3>
+
+                    <p>
+                        Réalisation d'un documentaire<br>
+                        en Corée du Sud pour un projet scolaire
+                    </p>
+
+                    <p>
+                        <strong>Participation :</strong> Réalisation du graphisme/design du site,<br>
+                        Maquettage du site, Prise photographique et participation à la narration.
+                    </p>
+
+                    <div class="projets-date">
+                        Année 2026
+                    </div>
+
+                    <a href="https://pecherurale.mastercmw.com/">
+                        VOIR LE PROJET
+                    </a>
+                </div>
+            </article>
+        </div>
+</html>
