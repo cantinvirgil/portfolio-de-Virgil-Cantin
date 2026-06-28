@@ -119,6 +119,15 @@
   .projets-image {
     width: 50%;
   }
+  .presentation{
+    justify-content: center;
+  }
+
+.projets-titre{
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  size: 50px;
+}
 
   .projets-image img{
     width: 100%;
@@ -132,13 +141,21 @@
     width: 50%;
   }
 
-    .projets-video video{
+ projets-video video{
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1); 
+}
+
+.imagedefond { 
+background-image:"Photo\IMG_0944.jpg";
+background-color: grey;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 .bouton-projet{
