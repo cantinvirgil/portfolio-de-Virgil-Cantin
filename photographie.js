@@ -1,4 +1,6 @@
- function basculerLangue() {
+/*https://share.gemini.google/nM1OB6bSDEKG correction de code*/
+
+function basculerLangue() {
     lang = lang === 'fr' ? 'en' : 'fr';
     const t = translations[lang];
     Object.entries(t).forEach(([id, val]) => {
@@ -32,21 +34,25 @@
   }
 });
 
+const boutonsFiltres = document.querySelectorAll('#filters button');
+const figures = document.querySelectorAll('.galerie figure');
+
     const ZoomPhoto = document.getElementById('ZoomPhoto');
     const ZoomPhotoImg = document.getElementById('ZoomPhotoImg');
     const ZoomPhotoDescription = document.getElementById('ZoomPhotoDescription');
-    const fermer = document.getElementById('ZoomPhotoClose');
-    const flèchePrécédente = document.getElementById('photoAvant');
-    const flècheSuivante = document.getElementById('photoAprès');
+    const boutonFermer = document.getElementById('ZoomPhotoClose');
+    const boutonAvant = document.getElementById('photoAvant');
+    const boutonApres = document.getElementById('photoAprès');
     let currentIndex = 0;
 
     function visibleItems() {
-      return Array.from(items).filter(item => !item.classList.contains('hide'));
+      return Array.from(figures).filter(item => !item.classList.contains('hide'));
     }
 
     function openZoomPhoto(index) {
       const visible = visibleItems();
       if (!visible.length) return;
+
       currentIndex = (index + visible.length) % visible.length;
       const item = visible[currentIndex];
       const img = item.querySelector('img');
@@ -57,29 +63,31 @@
       ZoomPhoto.classList.add('open');
     }
 
-    function fermer() {
+    function fermerZoom() {
       ZoomPhoto.classList.remove('open');
     }
 
-    items.forEach((item) => {
-      item.addEventListener('click', () => {
+    figures.forEach((item) => {
+      figures.addEventListener('click', () => {
         const visible = visibleItems();
         const index = visible.indexOf(item);
+        if (index>-1) openZoomPhoto(index)
         openZoomPhoto(index);
       });
     });
 
-    closeBtn.addEventListener('click', fermer);
-    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex - 1); });
-    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex + 1); });
+    boutonFermer.addEventListener('click', fermerZoom);
+    boutonAvant.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex - 1); });
+    boutonApres.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex + 1); });
 
     ZoomPhoto.addEventListener('click', (e) => {
-      if (e.target === ZoomPhoto) fermer();
+      if (e.target === ZoomPhoto) fermerZoom();
     });
 
     document.addEventListener('keydown', (e) => {
       if (!ZoomPhoto.classList.contains('open')) return;
-      if (e.key === 'Escape') fermer();
+      if (e.key === 'Escape') fermerZoom();
       if (e.key === 'ArrowRight') openZoomPhoto(currentIndex + 1);
       if (e.key === 'ArrowLeft') openZoomPhoto(currentIndex - 1);
     });
+  
