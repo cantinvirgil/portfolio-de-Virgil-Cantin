@@ -1,31 +1,31 @@
-/*https://share.gemini.google/nM1OB6bSDEKG correction de code*/
+/*https://share.gemini.google/6fpeHkTUh8ww correction de code et aide pour les filtres photos*/
 
 function basculerLangue() {
-    lang = lang === 'fr' ? 'en' : 'fr';
-    const t = translations[lang];
-    Object.entries(t).forEach(([id, val]) => {
-      const el = document.getElementById(id);
-      if (el) el.innerHTML = val;
-    });
-    document.querySelector('.bouton-langue').textContent = t['bouton-langue'].replace('&shy;', '');
-    document.querySelector('.bouton-langue').innerHTML = t['bouton-langue'];
-  }
+  lang = lang === 'fr' ? 'en' : 'fr';
+  const t = translations[lang];
+  Object.entries(t).forEach(([id, val]) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = val;
+  });
+  document.querySelector('.bouton-langue').textContent = t['bouton-langue'].replace('&shy;', '');
+  document.querySelector('.bouton-langue').innerHTML = t['bouton-langue'];
+}
 
-  function basculerTheme() {
-    document.body.classList.toggle('dark', document.getElementById('interrupteurSombre').checked);
+function basculerTheme() {
+  document.body.classList.toggle('dark', document.getElementById('interrupteurSombre').checked);
   const estSombre = document.getElementById('interrupteurSombre').checked;
   localStorage.setItem('theme', estSombre ? 'sombre' : 'clair');
 }
 
-  function navigate(page) {
-    event.preventDefault();
-    alert(`Navigation vers : ${page}`);
-  }
+function navigate(page) {
+  event.preventDefault();
+  alert(`Navigation vers : ${page}`);
+}
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const themeSauvegarde = localStorage.getItem('theme');
   const interrupteur = document.getElementById('interrupteurSombre');
-  
+
   if (themeSauvegarde === 'sombre') {
     document.body.classList.add('dark');
     if (interrupteur) {
@@ -34,8 +34,27 @@ function basculerLangue() {
   }
 });
 
+/*filtres*/
+
 const boutonsFiltres = document.querySelectorAll('#filters button');
 const figures = document.querySelectorAll('.galerie figure');
+
+boutonsFiltres.forEach(bouton => {
+  bouton.addEventListener('click', () => {
+    boutonsFiltres.forEach(btn => btn.classList.remove('active'));
+    bouton.classList.add('active');
+    const filtreActuel = bouton.getAttribute('data-filter');
+
+    figures.forEach(figure => {
+        const categorieFigure = figure.getAttribute('data-cat');
+        if (filtreActuel === 'tout' || categorieFigure === filtreActuel) {
+          figure.classList.remove('hide');
+        } else {
+          figure.classList.add('hide');
+          }
+      });
+    });
+  });
 
     const ZoomPhoto = document.getElementById('ZoomPhoto');
     const ZoomPhotoImg = document.getElementById('ZoomPhotoImg');
@@ -68,26 +87,26 @@ const figures = document.querySelectorAll('.galerie figure');
     }
 
     figures.forEach((item) => {
-      figures.addEventListener('click', () => {
+      item.addEventListener('click', () => {
         const visible = visibleItems();
         const index = visible.indexOf(item);
-        if (index>-1) openZoomPhoto(index)
+        if (index > -1) openZoomPhoto(index)
         openZoomPhoto(index);
       });
     });
 
-    boutonFermer.addEventListener('click', fermerZoom);
-    boutonAvant.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex - 1); });
-    boutonApres.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex + 1); });
 
-    ZoomPhoto.addEventListener('click', (e) => {
-      if (e.target === ZoomPhoto) fermerZoom();
-    });
+boutonFermer.addEventListener('click', fermerZoom);
+boutonAvant.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex - 1); });
+boutonApres.addEventListener('click', (e) => { e.stopPropagation(); openZoomPhoto(currentIndex + 1); });
 
-    document.addEventListener('keydown', (e) => {
-      if (!ZoomPhoto.classList.contains('open')) return;
-      if (e.key === 'Escape') fermerZoom();
-      if (e.key === 'ArrowRight') openZoomPhoto(currentIndex + 1);
-      if (e.key === 'ArrowLeft') openZoomPhoto(currentIndex - 1);
-    });
-  
+ZoomPhoto.addEventListener('click', (e) => {
+  if (e.target === ZoomPhoto) fermerZoom();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!ZoomPhoto.classList.contains('open')) return;
+  if (e.key === 'Escape') fermerZoom();
+  if (e.key === 'ArrowRight') openZoomPhoto(currentIndex + 1);
+  if (e.key === 'ArrowLeft') openZoomPhoto(currentIndex - 1);
+});
