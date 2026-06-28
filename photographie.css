@@ -96,7 +96,6 @@
     transform: translateX(16px);
   }
 
-
 nav button::after {
   content: "";
   position: absolute;

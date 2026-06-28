@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       interrupteur.checked = true;
     }
   }
-});
+
 
 /*filtres*/
 
@@ -109,4 +109,5 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') fermerZoom();
   if (e.key === 'ArrowRight') openZoomPhoto(currentIndex + 1);
   if (e.key === 'ArrowLeft') openZoomPhoto(currentIndex - 1);
+});
 });
