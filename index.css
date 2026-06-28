@@ -8,6 +8,9 @@
       scroll-behavior: smooth;
   }
 
+  /*https://claude.ai/share/2a9bcd50-3921-48bc-a5e4-06797c3963a7 utilisation pour les carrés de catégories*/
+  /*https://share.gemini.google/ObUppY1meS0N problème de dimension*/
+
   body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #1a1a1a;
