@@ -9,6 +9,7 @@
   }
 
   /*https://share.gemini.google/69E0IjUP2HQd pour inspiration CSS et problème avec le mode sombre et de disposition d'élément*/
+/*https://share.gemini.google/S2V9R6KjWrtb pour réussir à transformer ma vidéo en lecteur vidéo*/
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -141,7 +142,7 @@
     width: 50%;
   }
 
- projets-video video{
+.projets-video video{
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
