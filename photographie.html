@@ -16,9 +16,9 @@
 
         <div class="navbar">
             <nav class="menu">
-                <a href="index.html">Accueil</a>
-                <a href="photographie.html">Photographie</a>
-                <a href="projet.html">Projet</a>
+                <a href="index.html" id="Accueil">Accueil</a>
+                <a href="photographie.html" id="Photo">Photographie</a>
+                <a href="projet.html" id="Projet">Projet</a>
             </nav>
 
             <div class="contrôles">
@@ -27,7 +27,7 @@
                         <input type="checkbox" id="interrupteurSombre" onchange="basculerTheme()" />
                         <span class="curseur"></span>
                     </label>
-                    Thème sombre
+                    <span id="texte-sombre">Thème sombre</span>
                 </label>
                 <button class="bouton-langue" onclick="basculerLangue()">🇬🇧 Passer en Anglais</button>
             </div>
@@ -35,11 +35,11 @@
     </header>
 
     <nav id="filters">
-        <button class="active" data-filter="tout">Tout</button>
-        <button data-filter="portrait">Portrait</button>
-        <button data-filter="paysage">Paysage</button>
-        <button data-filter="rue">Rue</button>
-        <button data-filter="animaux">Animaux</button>
+        <button class="active" data-filter="tout" id="filtre-tout">Tout</button>
+        <button data-filter="portrait" id="filtre-portrait">Portrait</button>
+        <button data-filter="paysage" id="filtre-paysage">Paysage</button>
+        <button data-filter="rue" id="filtre-rue">Rue</button>
+        <button data-filter="animaux" id="filtre-animaux">Animaux</button>
     </nav>
     </header>
 
