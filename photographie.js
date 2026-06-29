@@ -1,4 +1,34 @@
 /*https://share.gemini.google/6fpeHkTUh8ww correction de code et aide pour les filtres photos*/
+/*https://share.gemini.google/oIAZjLs75QuM mise en place du mode sombre et multilanguage*/
+
+let lang = 'fr';
+
+const translations = {
+  fr: {
+'Accueil': 'Accueil',
+    'Photo': 'Photographie',
+    'Projet': 'Projet',
+    'texte-sombre': 'Thème sombre',
+    'bouton-langue': '🇬🇧 Passer en Anglais',
+    'filtre-tout': 'Tout',
+    'filtre-portrait': 'Portrait',
+    'filtre-paysage': 'Paysage',
+    'filtre-rue': 'Rue',
+    'filtre-animaux': 'Animaux',
+  },
+  en: {
+'Accueil': 'Home',
+    'Photo': 'Photography',
+    'Projet': 'Projects',
+    'texte-sombre': 'Dark theme',
+    'bouton-langue': '🇫🇷 Switch to French',
+    'filtre-tout': 'All',
+    'filtre-portrait': 'Portrait',
+    'filtre-paysage': 'Landscape',
+    'filtre-rue': 'Street',
+    'filtre-animaux': 'Animals',
+  }
+};
 
 function basculerLangue() {
   lang = lang === 'fr' ? 'en' : 'fr';

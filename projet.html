@@ -12,9 +12,9 @@
 <body>
     <div class="navbar">
         <nav class="menu">
-            <a href="index.html">Accueil</a>
-            <a href="photographie.html">Photographie</a>
-            <a href="projet.html">Projet</a>
+                <a href="index.html" id="Accueil">Accueil</a>
+                <a href="photographie.html" id="Photo">Photographie</a>
+                <a href="projet.html" id="Projet">Projet</a>
         </nav>
 
         <div class="contrôles">
@@ -23,7 +23,7 @@
                     <input type="checkbox" id="interrupteurSombre" onchange="basculerTheme()" />
                     <span class="curseur"></span>
                 </label>
-                Thème sombre
+                <span id="texte-sombre">Thème sombre</span>
             </label>
             <button class="bouton-langue" onclick="basculerLangue()">🇬🇧 Passer en Anglais</button>
         </div>
@@ -31,7 +31,7 @@
     <section class="presentation">
         <div class="imageFond">
             <div class="texte">
-                <h2 class="projets-titre">
+                <h2 class="projets-titre" id="titre-page">
                     Mes PROJETS
                 </h2>
             </div>
@@ -48,25 +48,25 @@
 
                 <div class="projets-info">
 
-                    <h3>
+                    <h3 id="titre1">
                         Documentaire "Vivre de la mer à Geoje"
                     </h3>
 
-                    <p>
+                    <p id="description1">
                         Réalisation d'un documentaire<br>
                         en Corée du Sud pour un projet scolaire
                     </p>
 
-                    <p>
+                    <p id="description2">
                         <strong>Participation :</strong> Réalisation du graphisme/design du site,<br>
                         Maquettage du site, Prise photographique et participation à la narration.
                     </p>
 
-                    <div class="projets-date">
+                    <div class="projets-date" id="date1">
                         Année 2026
                     </div>
 
-                    <a href="https://pecherurale.mastercmw.com/" class="bouton-projet" target="_blank">
+                    <a href="https://pecherurale.mastercmw.com/" class="bouton-projet" id="btn1" target="_blank">
                         VOIR LE PROJET
                     </a>
                 </div>
@@ -80,25 +80,25 @@
 
                 <div class="projets-info">
 
-                    <h3>
+                    <h3 id="titre2">
                         Projet de communication "geofoodly"
                     </h3>
 
-                    <p>
+                    <p id="description3">
                         Réalisation d'une campagne de communication<br>
                         pour un projet fictif de food-truck
                     </p>
 
-                    <p>
+                    <p id="description4">
                         <strong>Participation :</strong> Réalisation du graphisme/design du site,<br>
                         Maquettage du site, campagne marketing et réseaux sociaux.
                     </p>
 
-                    <div class="projets-date">
+                    <div class="projets-date" id="date2">
                         Année 2024
                     </div>
 
-                    <a href="https://geofoodly.wixsite.com/geofoodly" class="bouton-projet" target="_blank">
+                    <a href="https://geofoodly.wixsite.com/geofoodly" class="bouton-projet" id="btn2" target="_blank">
                         VOIR LE PROJET
                     </a>
                 </div>
@@ -112,26 +112,26 @@
 
                 <div class="projets-info">
 
-                    <h3>
+                    <h3 id="titre3">
                         Projet de communication "Plami"
                     </h3>
 
-                    <p>
+                    <p id="description5">
                         Réalisation d'une campagne marketing<br>
                         pour un projet fictif d'application de gestion du temps
                     </p>
 
-                    <p>
+                    <p id="description6">
                         <strong>Participation :</strong> Gestion de la communication,<br>
                         campagne marketing et réseaux sociaux, création de charte éditorial<br>
                         Création de visuel et pictogramme
                     </p>
 
-                    <div class="projets-date">
+                    <div class="projets-date" id="date3">
                         Année 2024
                     </div>
 
-                    <a href="https://www.instagram.com/plami_app/" class="bouton-projet" target="_blank">
+                    <a href="https://www.instagram.com/plami_app/" class="bouton-projet" id="btn3" target="_blank">
                         VOIR LE PROJET
                     </a>
                 </div>
@@ -145,25 +145,25 @@
 
                 <div class="projets-info">
 
-                    <h3>
+                    <h3 id="titre4">
                         Projet de création de jeu "Designer's quest"
                     </h3>
 
-                    <p>
+                    <p id="description7">
                         Réalisation d'un jeu de société sur une semaine
                     </p>
 
-                    <p>
+                    <p id="description8">
                         <strong>Participation :</strong> Création de visuel et pictogramme<br>
                         Création 3d de la boîte de jeu, Pratique de l'anglais dans le cadre d'un projet.
                     </p>
 
-                    <div class="projets-date">
+                    <div class="projets-date" id="date4">
                         Année 2024
                     </div>
 
-                    <a href="https://cantinvirgil8.wixsite.com/monsite/about-3-2" class="bouton-projet"
-                        target="_blank">Voir le projet</a>
+                    <a href="https://cantinvirgil8.wixsite.com/monsite/about-3-2" class="bouton-projet" id="btn4" target="_blank">
+                        Voir le projet</a>
                 </div>
             </article>
             <article class="projets-details">
@@ -178,20 +178,20 @@
 
                 <div class="projets-info">
 
-                    <h3>
+                    <h3 id="titre5">
                         Projet de campagne publicitaire pour la Cartonnerie"
                     </h3>
 
-                    <p>
+                    <p id="description9">
                         Réalisation d'une vidéo promotionnelle pour la Cartonnerie
                     </p>
 
-                    <p>
+                    <p id="description10">
                         <strong>Participation :</strong> Prise de plan<br>
                         Montage vidéo
                     </p>
 
-                    <div class="projets-date">
+                    <div class="projets-date" id="date5">
                         Année 2024
                     </div>
                 </div>
