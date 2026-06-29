@@ -130,9 +130,16 @@
 .projets-titre{
   text-align: center;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size:50px;
+  font-size:11vw;
+  font-weight: 900;
+  text-transform: uppercase;
 }
-
+.texte{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   .projets-image img{
     width: 100%;
     height: auto;
@@ -161,6 +168,9 @@ height: 300px;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .bouton-projet{
