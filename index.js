@@ -8,10 +8,8 @@ const translations = {
     'cat-titre': 'Choisissez une catégorie',
     'case1-titre': 'Photo&shy;graphie',
     'case1-desc': 'Argentique, numérique & portraits',
-    'case2-titre': 'Web&shy;design',
-    'case2-desc': 'Interfaces, UX & prototypes',
-    'case3-titre': 'Projet<br>Scolaire',
-    'case3-desc': 'Travaux académiques & briefs',
+    'case2-titre': 'Projet<br>Scolaire',
+    'case2-desc': 'Travaux académiques & briefs',
     'bouton-langue': '🇬🇧 Passer en Anglais',
   },
   en: {
@@ -21,10 +19,8 @@ const translations = {
     'cat-titre': 'Choose a category',
     'case1-titre': 'Photo&shy;graphy',
     'case1-desc': 'Film, digital & portraits',
-    'case2-titre': 'Web&shy;design',
-    'case2-desc': 'Interfaces, UX & prototypes',
-    'case3-titre': 'School<br>Project',
-    'case3-desc': 'Academic work & briefs',
+    'case2-titre': 'School<br>Project',
+    'case2-desc': 'Academic work & briefs',
     'bouton-langue': '🇫🇷 Switch to French',
   }
 };
