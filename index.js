@@ -42,10 +42,14 @@
   }
 
   function basculerTheme() {
-    document.body.classList.toggle('dark', document.getElementById('interrupteurSombre').checked);
-  const estSombre = document.getElementById('interrupteurSombre').checked;
-  localStorage.setItem('theme', estSombre ? 'sombre' : 'clair');
-}
+    document.body.classList.toggle('dark');
+    const interrupteur= document.getElementById('interrupteurSombre');
+    if(interrupteur.checked){
+      localStorage.setItem('theme', 'sombre');
+    }else{
+      localStorage.setItem('theme', 'clair');
+    }
+  }
 
   function navigate(page) {
     event.preventDefault();
