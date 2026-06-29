@@ -1,4 +1,6 @@
-  let lang = 'fr';
+ /*https://share.gemini.google/oIAZjLs75QuM mise en place du mode sombre et multilanguage*/
+
+ let lang = 'fr';
 
   const translations = {
     fr: {

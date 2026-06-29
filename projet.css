@@ -133,6 +133,7 @@
   font-size:11vw;
   font-weight: 900;
   text-transform: uppercase;
+  color: white;
 }
 .texte{
   text-align: center;
@@ -164,7 +165,7 @@
 .imageFond { 
 background-image:url("Photo/IMG_0944.jpg");
 width:100%;
-height: 300px;
+height: 750px;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
