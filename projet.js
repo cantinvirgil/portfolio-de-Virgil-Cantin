@@ -5,7 +5,7 @@ const translations = {
     'Accueil': 'Accueil',
     'Photo': 'Photographie',
     'Projet': 'Projet',
-    'texte-theme': 'Thème sombre',
+    'texte-sombre': 'Thème sombre',
     'bouton-langue': '🇬🇧 Passer en Anglais',
     
     'titre-page': 'Mes PROJETS',
